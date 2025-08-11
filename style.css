@@ -1,0 +1,54 @@
+body {
+  margin: 0; padding: 0;
+  background-color: black;
+  overflow: hidden;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  position: relative;
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: 28px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.gift-container {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 1s ease-in-out;
+}
+
+.gift-container.show {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gift {
+  width: 150px;
+  cursor: pointer;
+}
+
+#heart {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Audio elementi görünmez yap */
+audio {
+  display: none;
+}
